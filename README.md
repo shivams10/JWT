@@ -1,2 +1,2 @@
 # JWT
-JWT working flow made with node and express js
+JWT example flow made with node and express js
