@@ -1,10 +1,10 @@
-const express = require('express');
-const { registerUser, loginUser } = require('../userController');
-const { userRegisterValidation } = require('../utils/userValidation');
+import express from 'express';
+import { registerUser, loginUser } from '../userController/index.js';
+import {userRegisterValidation} from "../utils/userValidation.js"
 const routes = express.Router();
 
 // Routes
 routes.post('/register', userRegisterValidation, registerUser);
 routes.post('/login', loginUser);
 
-module.exports = routes;
+export default routes;
